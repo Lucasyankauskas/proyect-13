@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="img1.webp" alt="1">
+                <h1>Misty</h1>
+                <div class="details">
+                    <h2>Misty</h2>
+                    <p>1° friend</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img2.webp" alt="2">
+                <h1>Brock</h1>
+                <div class="details">
+                    <h2>Brock</h2>
+                    <p>2° friend</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="img3.webp" alt="3">
+                <h1>Todd</h1>
+                <div class="details">
+                    <h2>Todd</h2>
+                    <p>3° friend</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img4.webp" alt="4">
+                <h1>Tracey</h1>
+                <div class="details">
+                    <h2>Tracey</h2>
+                    <p>4° friend</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img5.jpg" alt="5">
+                <h1>May</h1>
+                <div class="details">
+                    <h2>May</h2>
+                    <p>5° friend</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="img6.png" alt="6">
+                <h1>Max</h1>
+                <div class="details">
+                    <h2>Max</h2>
+                    <p>6° friend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jQuery.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $('.slider-img').on('click', function(){
+                $('.slider-img').removeClass('active');
+                $(this).addClass('active');
+            })
+        });
+    </script>
+</body>
+</html>
